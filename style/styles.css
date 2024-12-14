@@ -81,7 +81,7 @@ body {
 }
 
 .profiles-list__profile {
-  max-width: 30.4rem;
+  width: 100%;
   height: 4.5rem;
   background-color: var(--grey-700);
   padding: 1.2rem;
@@ -103,4 +103,29 @@ body {
   color: var(--white);
   font-size: var(--default-font-size);
   font-weight: var(--bold-font-weight);
+}
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .main-container {
+    max-width: 45.6rem;
+  }
+}
+
+/*  PERF: Small mobiles */
+@media (max-width: 30em) {
+  html {
+    font-size: 50%;
+  }
+  .main-container {
+    max-width: 32.7rem;
+    padding: 2.4rem;
+    margin-top: 11.5rem;
+  }
+}
+
+/*  PERF: Larger mobiles */
+@media (min-width: 30em) and (max-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
 }
