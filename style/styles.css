@@ -1,0 +1,106 @@
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333;
+  --green: #c4f82a;
+  --white: #fff;
+  --default-font-size: 1.4rem;
+  --bold-font-weight: 700;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--grey-900);
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.main-container {
+  max-width: 38.4rem;
+  height: auto;
+  padding: 4rem;
+  margin: 17.35rem auto;
+  border-radius: 1.2rem;
+  background-color: var(--grey-800);
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.author__image {
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 2.4rem;
+  font-weight: var(--bold-font-weight);
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+
+.author-location {
+  font-size: var(--default-font-size);
+  font-weight: var(--bold-font-weight);
+  color: var(--green);
+}
+
+.author-job {
+  font-size: var(--default-font-size);
+  color: var(--white);
+  margin-bottom: 2.4rem;
+}
+
+.profiles-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.profiles-list__profile {
+  max-width: 30.4rem;
+  height: 4.5rem;
+  background-color: var(--grey-700);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.profiles-list__profile:hover {
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.profiles-list__profile:hover .profiles-list__link {
+  color: var(--grey-700);
+}
+
+.profiles-list__link:link,
+.profiles-list__link:visited {
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--default-font-size);
+  font-weight: var(--bold-font-weight);
+}
